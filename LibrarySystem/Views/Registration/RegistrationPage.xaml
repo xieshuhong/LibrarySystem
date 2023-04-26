@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="LibrarySystem.Views.Registration.RegistrationPage"
+             Title="">
+    <ContentPage.Resources>
+        <Style x:Key="InvalidEntryStyle" TargetType="Entry">
+            <Setter Property="TextColor" Value="Red" />
+        </Style>
+        <Style x:Key="ValidEntryStyle" TargetType="Entry">
+            <Setter Property="TextColor" Value="Green" />
+        </Style>
+    </ContentPage.Resources>
+    <FlexLayout JustifyContent="Center" AlignItems="Center" Direction="Column">
+        <HorizontalStackLayout>
+            <Frame HorizontalOptions="Start" HasShadow="True" BorderColor="White" HeightRequest="80" WidthRequest="100" CornerRadius="28">
+                <Label Text="Name:" />
+            </Frame>
+            <Frame HasShadow="True" Padding="0" BorderColor="White" HeightRequest="45" HorizontalOptions="FillAndExpand">
+                <Entry VerticalOptions="Center" WidthRequest="285" Text="{Binding name}">
+                    <Entry.Behaviors>
+                        <toolkit:TextValidationBehavior 
+                        InvalidStyle="{StaticResource InvalidEntryStyle}"
+                        ValidStyle="{StaticResource ValidEntryStyle}"
+                        Flags="ValidateOnValueChanged"
+                        MinimumLength="3"
+                        MaximumLength="10" />
+                    </Entry.Behaviors>
+                </Entry>
+            </Frame>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout>
+            <Frame HorizontalOptions="Start" HasShadow="True" BorderColor="White" HeightRequest="80" WidthRequest="110" CornerRadius="28">
+                <Label Text="Password:" />
+            </Frame>
+            <Frame HasShadow="True" Padding="0" BorderColor="White" HeightRequest="45" HorizontalOptions="FillAndExpand">
+                <Entry IsPassword="True" VerticalOptions="Center" Text="{Binding password}" WidthRequest="285"></Entry>
+            </Frame>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout>
+            <Frame HorizontalOptions="Start" HasShadow="True" BorderColor="White" HeightRequest="80" WidthRequest="100" CornerRadius="28">
+                <Label  Text="Email:" />
+            </Frame>
+            <Frame HasShadow="True" Padding="0" BorderColor="White" HeightRequest="45" HorizontalOptions="FillAndExpand">
+                <Entry VerticalOptions="Center" Text="{Binding email}" WidthRequest="300"></Entry>
+            </Frame>
+        </HorizontalStackLayout>
+        <Button Margin="15" Text="Register" WidthRequest="100" CornerRadius="20" 
+                HorizontalOptions="Center" Background="#0792ef" Command="{Binding RegisterUserCommand}"/>
+    </FlexLayout>
+</ContentPage>

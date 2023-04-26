@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LibrarySystem.Views.Tabs.BookListPage"
+             Title="" BackgroundColor="#D3D3D3">
+    <StackLayout Margin="20">
+        <Button Text="Log out" WidthRequest="100" CornerRadius="20" HorizontalOptions="End" Background="#0792ef" 
+                Command="{Binding LogoutCommand}"/>
+        <ListView x:Name="listView"
+                  ItemsSource="{Binding Books}"
+                  ItemSelected="onItemClicked">
+            <ListView.ItemTemplate>
+                <DataTemplate >
+                    <ViewCell>
+                        <Frame BackgroundColor="#F0F0F0">
+                        <Grid Padding="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="50" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="200" />
+                                <ColumnDefinition Width="50" />
+                                <ColumnDefinition Width="600" />
+                                <ColumnDefinition Width="100" />
+                                <ColumnDefinition Width="100" />
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.RowSpan="4" 
+                                   Source="{Binding Imagesource}" 
+                                   Aspect="AspectFit"
+                                   HeightRequest="250" 
+                                   WidthRequest="180" />
+                            <Label Grid.Column="2" Margin="0, 20, 0, 0"  Text="Book Title:"
+                                   FontAttributes="Bold" TextColor="#000000" FontFamily="Times New Roman" FontSize="20"
+                                   />
+                            <Label Grid.Column="2"
+                                   Margin="100,20,0,0"
+                                   Text="{Binding Title}" 
+                                   FontAttributes="Bold" TextColor="#000000" FontFamily="Times New Roman" FontSize="20"/>
+                            <Label Grid.Column="2" Grid.Row="1" Margin="0, 20, 0, 0"  Text="Book Description:"
+                                   FontAttributes="Bold" TextColor="#000000" FontFamily="Times New Roman" FontSize="20"
+                                   />
+                            <Label Grid.Column="2"
+                                   Grid.Row="1"
+                                   Margin="160,20,20,20"
+                                   Text="{Binding Description}" 
+                                   FontAttributes="Bold" TextColor="#000000" FontFamily="Times New Roman" FontSize="20"/>
+                            <Label Grid.Column="2" Grid.Row="2" Margin="0, 20, 0, 0"  Text="Author:"
+                                   FontAttributes="Bold" TextColor="#000000" FontFamily="Times New Roman" FontSize="20"
+                                   />
+                            <Label Grid.Column="2"
+                                   Grid.Row="2"
+                                   Margin="80,20,20,20"
+                                   Text="{Binding Author}" 
+                                   FontAttributes="Bold" TextColor="#000000" FontFamily="Times New Roman" FontSize="20"/>
+                            <Label Grid.Row="3" Grid.Column="2" Margin="0, 20, 0, 0"  Text="Book Status:"
+                                   FontAttributes="Bold" TextColor="#000000" FontFamily="Times New Roman" FontSize="20"
+                                   />
+                            <Label Grid.Row="3"
+                                   Grid.Column="2"
+                                   Margin="120,20,20,20"
+                                   Text="{Binding Status}"
+                                   FontAttributes="Italic" 
+                                   VerticalOptions="End" TextColor="#000000" FontFamily="Times New Roman" FontSize="20"/>
+                            <Label Grid.Row="4" Grid.Column="2"   Text="If it is available you can click the item to book it"
+                                   FontAttributes="Italic" TextColor="#000000" FontFamily="Times New Roman" FontSize="16"
+                                   />
+                            </Grid>
+                       </Frame>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

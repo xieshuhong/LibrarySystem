@@ -1,0 +1,65 @@
+is_global = true
+build_property.TargetFramework = net7.0-maccatalyst
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = LibrarySystem
+build_property.ProjectDir = C:\Users\shung\Desktop\OOP\April_26\LibrarySystem\LibrarySystem\
+
+[C:/Users/shung/Desktop/OOP/April_26/LibrarySystem/LibrarySystem/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = LibrarySystem.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/shung/Desktop/OOP/April_26/LibrarySystem/LibrarySystem/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = LibrarySystem.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/shung/Desktop/OOP/April_26/LibrarySystem/LibrarySystem/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = LibrarySystem.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/shung/Desktop/OOP/April_26/LibrarySystem/LibrarySystem/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = LibrarySystem.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/shung/Desktop/OOP/April_26/LibrarySystem/LibrarySystem/Views/Login/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = LibrarySystem.Views.Login.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Login\LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Login\LoginPage.xaml
+
+[C:/Users/shung/Desktop/OOP/April_26/LibrarySystem/LibrarySystem/Views/Registration/RegistrationPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = LibrarySystem.Views.Registration.RegistrationPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Registration\RegistrationPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Registration\RegistrationPage.xaml
+
+[C:/Users/shung/Desktop/OOP/April_26/LibrarySystem/LibrarySystem/Views/Tabs/BookListPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = LibrarySystem.Views.Tabs.BookListPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Tabs\BookListPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Tabs\BookListPage.xaml
+
+[C:/Users/shung/Desktop/OOP/April_26/LibrarySystem/LibrarySystem/Views/Tabs/BookReserveDetail.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = LibrarySystem.Views.Tabs.BookReserveDetail.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Tabs\BookReserveDetail.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Tabs\BookReserveDetail.xaml
+
+[C:/Users/shung/Desktop/OOP/April_26/LibrarySystem/LibrarySystem/Views/Tabs/ReservedBookList.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = LibrarySystem.Views.Tabs.ReservedBookList.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Tabs\ReservedBookList.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Tabs\ReservedBookList.xaml

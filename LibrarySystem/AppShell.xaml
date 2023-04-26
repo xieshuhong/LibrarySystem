@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="LibrarySystem.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:login="clr-namespace:LibrarySystem.Views.Login"
+    xmlns:tabs="clr-namespace:LibrarySystem.Views.Tabs"
+    xmlns:local="clr-namespace:LibrarySystem"
+    Shell.FlyoutBehavior="Disabled">
+
+    <ShellContent
+        Title=""
+        ContentTemplate="{DataTemplate login:LoginPage}"
+        Route="Login"
+        />
+
+    <TabBar Route="Main">
+        <ShellContent
+            Title="Books in the library"
+            Route="BookListPage"
+            ContentTemplate="{DataTemplate tabs:BookListPage}"
+        >
+        </ShellContent>
+
+        <ShellContent
+            Title="books that I booked"
+            Route="ReservedBookList"
+            ContentTemplate="{DataTemplate tabs:ReservedBookList}"
+        >
+        </ShellContent>
+    </TabBar>
+
+</Shell>

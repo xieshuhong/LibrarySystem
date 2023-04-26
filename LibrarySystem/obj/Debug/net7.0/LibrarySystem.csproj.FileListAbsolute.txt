@@ -1,0 +1,13 @@
+C:\Users\shung\Desktop\OOP\April_26\LibrarySystem\LibrarySystem\bin\Debug\net7.0\LibrarySystem.deps.json
+C:\Users\shung\Desktop\OOP\April_26\LibrarySystem\LibrarySystem\bin\Debug\net7.0\LibrarySystem.dll
+C:\Users\shung\Desktop\OOP\April_26\LibrarySystem\LibrarySystem\bin\Debug\net7.0\LibrarySystem.pdb
+C:\Users\shung\Desktop\OOP\April_26\LibrarySystem\LibrarySystem\obj\Debug\net7.0\LibrarySystem.csproj.AssemblyReference.cache
+C:\Users\shung\Desktop\OOP\April_26\LibrarySystem\LibrarySystem\obj\Debug\net7.0\LibrarySystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\shung\Desktop\OOP\April_26\LibrarySystem\LibrarySystem\obj\Debug\net7.0\LibrarySystem.AssemblyInfoInputs.cache
+C:\Users\shung\Desktop\OOP\April_26\LibrarySystem\LibrarySystem\obj\Debug\net7.0\LibrarySystem.AssemblyInfo.cs
+C:\Users\shung\Desktop\OOP\April_26\LibrarySystem\LibrarySystem\obj\Debug\net7.0\LibrarySystem.csproj.CoreCompileInputs.cache
+C:\Users\shung\Desktop\OOP\April_26\LibrarySystem\LibrarySystem\obj\Debug\net7.0\XamlC.stamp
+C:\Users\shung\Desktop\OOP\April_26\LibrarySystem\LibrarySystem\obj\Debug\net7.0\LibrarySystem.dll
+C:\Users\shung\Desktop\OOP\April_26\LibrarySystem\LibrarySystem\obj\Debug\net7.0\refint\LibrarySystem.dll
+C:\Users\shung\Desktop\OOP\April_26\LibrarySystem\LibrarySystem\obj\Debug\net7.0\LibrarySystem.pdb
+C:\Users\shung\Desktop\OOP\April_26\LibrarySystem\LibrarySystem\obj\Debug\net7.0\ref\LibrarySystem.dll

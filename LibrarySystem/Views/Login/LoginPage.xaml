@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LibrarySystem.Views.Login.LoginPage"
+             Title="">
+    <VerticalStackLayout
+            Spacing="30"
+            Padding="20,0"
+            VerticalOptions="Center">
+
+        <Image Source="library.jpg" HeightRequest="230" WidthRequest="450" />
+        <VerticalStackLayout>
+            <Label Text="Welcome" FontSize="28" TextColor="Gray" HorizontalTextAlignment="Center"/>
+            <Label Text="Login to your account" FontSize="28"  TextColor="Gray" HorizontalTextAlignment="Center"/>
+        </VerticalStackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Frame ZIndex="1" HasShadow="True" BorderColor="White" HeightRequest="56" WidthRequest="70" CornerRadius="28">
+                <Image Source="user.png" WidthRequest="50" HeightRequest="20"></Image>
+            </Frame>
+            <Frame HasShadow="True" Padding="0" Margin="-20, 0, 0, 0" BorderColor="White" HeightRequest="45" HorizontalOptions="FillAndExpand">
+                <Entry Margin="20, 0, 0, 0" VerticalOptions="Center" Placeholder="Name" Text="{Binding Username}"></Entry>
+            </Frame>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Frame ZIndex="1" HasShadow="True" BorderColor="White" HeightRequest="56" WidthRequest="70" CornerRadius="28">
+                <Image Source="password.png" WidthRequest="50" HeightRequest="20"></Image>
+            </Frame>
+            <Frame HasShadow="True" Padding="0" Margin="-20, 0, 0, 0" BorderColor="White" HeightRequest="45" HorizontalOptions="FillAndExpand">
+                <Entry IsPassword="True" Margin="20, 0, 0, 0" VerticalOptions="Center" Placeholder="Password" Text="{Binding Password}"></Entry>
+            </Frame>
+        </StackLayout>
+        <Button Text="Sign In" WidthRequest="100" CornerRadius="20" HorizontalOptions="Center" Background="#0792ef" 
+                Command="{Binding GotoBookCommand}"/>
+        <StackLayout Orientation="Horizontal" Spacing="5" HorizontalOptions="Center">
+            <Label Text="Don't have account?" TextColor="Gray"/>
+            <Label Text="Sign Up here!" TextColor="#50b3f2" WidthRequest="100">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding TapCommand}" />
+                </Label.GestureRecognizers>
+            </Label>
+        </StackLayout>
+    </VerticalStackLayout>
+</ContentPage>

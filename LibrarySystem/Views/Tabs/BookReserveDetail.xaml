@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LibrarySystem.Views.Tabs.BookReserveDetail"
+             Title="">
+    <FlexLayout Direction="Column"
+                AlignItems="Start">
+        <StackLayout Orientation="Horizontal" Margin="5">
+            <Label FontSize="24"  TextColor="#000000" FontAttributes="Italic" Text="Title: " FontFamily="Times New Roman" />
+            <Label FontSize="24"  TextColor="#000000" FontAttributes="Italic" Text="{Binding Book.Title}" FontFamily="Times New Roman" />
+        </StackLayout>
+        <Image Margin="10" Source="{Binding Book.Imagesource}" 
+                   HeightRequest="200" 
+                   WidthRequest="200" 
+                   HorizontalOptions="Center" />
+        <StackLayout Margin="8" Orientation="Horizontal">
+            <Label FontSize="24"  TextColor="#000000" FontAttributes="Bold" Text="Author: " FontFamily="Times New Roman" />
+            <Label FontSize="24"  TextColor="#000000" FontAttributes="Bold" Text="{Binding Book.Author}" FontFamily="Times New Roman" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Margin="15"  FontSize="24"  TextColor="#000000" FontAttributes="Bold" Text="Description:" FontFamily="Times New Roman" />
+            <Label Margin="15"  FontSize="24"  FontAttributes="Bold" Text="{Binding Book.Description}" FontFamily="Times New Roman" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Margin="15"  FontSize="24"  TextColor="#000000" FontAttributes="Bold" Text="Book start date: " FontFamily="Times New Roman" />
+            <DatePicker WidthRequest="200" Date="{Binding Startdate}"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Margin="15"  FontSize="24"  TextColor="#000000" FontAttributes="Bold" Text="End Date: " FontFamily="Times New Roman" />
+            <DatePicker WidthRequest="200" Date="{Binding Endate}"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Margin="15"  FontSize="24"  TextColor="#000000" FontAttributes="Bold" Text="Enter your name to book:" FontFamily="Times New Roman" />
+            <Entry HeightRequest="50" WidthRequest="200" x:Name="entry" Text="{Binding Username}"/>
+        </StackLayout>
+        <Button Margin="10, 10, 0, 0" Text="BOOK" WidthRequest="100" CornerRadius="20" HorizontalOptions="End" Background="#0792ef" 
+                Command="{Binding reserveABookCommand}"/>
+    </FlexLayout>
+</ContentPage>
